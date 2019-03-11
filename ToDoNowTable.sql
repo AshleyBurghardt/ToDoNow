@@ -1,0 +1,10 @@
+Create Schema ToDoNow
+GO
+
+CREATE TABLE [ToDoNow].[ListItem]
+(
+	Id Int IDENTITY (1,1) NOT NULL,
+	ItemText NVARCHAR(200) NOT NULL,
+
+	CONSTRAINT ListItem_Pk PRIMARY KEY CLUSTERED (Id)
+);
